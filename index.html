@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil S Y | Cloud & DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Nikhil S Y – Cloud and DevOps Engineer with experience in AWS, Azure, CI/CD, Kubernetes, and Terraform." />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    body { background: var(--light); color: var(--dark); line-height: 1.6; }
+    a { color: #e0e7ff; text-decoration: none; font-weight: 500; }
+    header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 4rem 1rem; }
+    .container { max-width: 1100px; margin: auto; padding: 0 1rem; }
+    header h1 { font-size: 2.5rem; }
+    header p { margin-top: 1rem; max-width: 700px; }
+    nav { margin-top: 1.5rem; }
+    nav a { margin-right: 1rem; font-weight: 500; color: #f8fafc; }
+    section { padding: 4rem 1rem; opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+    section.show { opacity: 1; transform: translateY(0); }
+    section h2 { font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 3px solid var(--primary); display: inline-block; }
+    .card { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .skills span { display: inline-block; background: #e0e7ff; color: #1e3a8a; padding: 0.4rem 0.7rem; margin: 0.3rem; border-radius: 20px; font-size: 0.9rem; }
+    footer { background: var(--dark); color: #cbd5f5; padding: 2rem 1rem; text-align: center; }
+    footer a { color: #93c5fd; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 3rem 1rem; }
+    }
+    </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      const reveal = () => {
+        const trigger = window.innerHeight * 0.85;
+        sections.forEach(sec => {
+          const top = sec.getBoundingClientRect().top;
+          if (top < trigger) sec.classList.add('show');
+        });
+      };
+      window.addEventListener('scroll', reveal);
+      reveal();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Nikhil S Y</h1>
+      <h3>Cloud & DevOps Engineer</h3>
+      <p>
+        Cloud and DevOps Engineer with 3+ years of experience in automating infrastructure, CI/CD pipelines, and cloud migrations across AWS and Azure.
+      </p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          Cloud and DevOps Engineer with 3+ years of experience in automating infrastructure, building CI/CD pipelines,
+          and executing cloud migrations across AWS and Microsoft Azure. Currently working at Accenture on large-scale
+          enterprise projects in the media and banking domains.
+        </p>
+        <p>
+          Strong hands-on experience with GoCD, Jenkins, GitHub Actions, Terraform, Ansible, Docker, Kubernetes, and
+          Cloud Foundry. Actively involved in microservices deployments, environment promotions, release management,
+          monitoring, and incident troubleshooting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="card">
+        <h3>Custom Software Engineering Analyst – Accenture</h3>
+        <p><em>Mar 2024 – Present | Comcast Media</em></p>
+        <ul>
+          <li>Designed and implemented end-to-end CI/CD pipelines using GoCD for Java-based microservices with GitHub integration.</li>
+          <li>Automated build and quality checks using Gradle and Maven, enforcing quality gates through SonarQube.</li>
+          <li>Managed artifact versioning and storage using JFrog Artifactory to ensure traceable and consistent deployments.</li>
+          <li>Deployed microservices to Cloud Foundry across Dev, UAT, and Production using environment-specific manifest.yml files.</li>
+          <li>Executed canary deployments with automated rollback strategies to minimize production risk.</li>
+          <li>Performed Kubernetes Proof of Concept by containerizing applications with Docker and validating pod scaling and service communication.</li>
+          <li>Used ELK Stack and Grafana dashboards for centralized logging, monitoring, and incident triage.</li>
+          <li>Handled regular server patching activities to ensure infrastructure security and compliance.</li>
+          <li>Actively contributing to CI/CD migration from GoCD to GitHub Actions.</li>
+          <li>Provided on-call and production support to ensure high availability and minimal downtime.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Custom Software Engineering Associate – Accenture</h3>
+        <p><em>Oct 2022 – Mar 2024 | US Bank</em></p>
+        <ul>
+          <li>Worked closely with Technical Solution Architecture (TSA) teams to understand infrastructure and security requirements.</li>
+          <li>Collaborated with application teams to assess architecture, dependencies, and automation needs.</li>
+          <li>Led migration of applications and workloads from on-premise datacenter to Microsoft Azure with minimal downtime.</li>
+          <li>Performed environment assessments and designed Azure equivalents for VMs, storage, databases, and networking.</li>
+          <li>Provisioned Azure infrastructure using reusable Terraform modules across multiple subscriptions.</li>
+          <li>Implemented Azure security best practices including NSGs, managed identities, and Key Vault integration.</li>
+          <li>Configured Azure Site Recovery (ASR) for disaster recovery and business continuity.</li>
+          <li>Developed and executed Ansible playbooks for post-deployment configuration and application readiness.</li>
+          <li>Created detailed deployment guides, runbooks, and operational documentation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="card skills">
+        <span>AWS</span><span>Azure</span><span>Terraform</span><span>Ansible</span><span>Docker</span><span>Kubernetes</span>
+        <span>GoCD</span><span>Jenkins</span><span>GitHub Actions</span><span>Cloud Foundry</span><span>ELK Stack</span><span>Grafana</span>
+        <span>Bash</span><span>Python</span><span>Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="grid">
+        <div class="card">AWS Certified Cloud Practitioner</div>
+        <div class="card">Microsoft Certified Azure Fundamentals (AZ‑900)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:nikhil20sy@gmail.com">nikhil20sy@gmail.com</a></p>
+        <p>Phone: <a href="tel:+916361839116">+91 63618 39116</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nikhil-s-2a5338218" target="_blank">linkedin.com/in/nikhil-s</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Nikhil S Y | Cloud & DevOps Engineer</p>
+  </footer>
+</body>
+</html>
