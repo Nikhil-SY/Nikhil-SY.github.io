@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikhil S Y | Cloud & DevOps Engineer</title>
-  <meta name="description" content="Portfolio of Nikhil S Y – Cloud and DevOps Engineer with experience in AWS, Azure, CI/CD, Kubernetes, and Terraform." />
+  <meta name="description" content="Portfolio of Nikhil S Y – Cloud and DevOps Engineer with 4+ years experience in AWS, Azure, CI/CD, Kubernetes, and Terraform." />
   <style>
     :root {
       --primary: #2563eb;
@@ -27,6 +27,13 @@
     .card { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
     .skills span { display: inline-block; background: #e0e7ff; color: #1e3a8a; padding: 0.4rem 0.7rem; margin: 0.3rem; border-radius: 20px; font-size: 0.9rem; }
+    .card h3 { margin-top: 0; color: #1e3a8a; margin-bottom: 0.5rem; }
+    .card .role-info { color: var(--gray); font-style: italic; margin-bottom: 1rem; }
+    .card ul { margin-left: 1.5rem; margin-top: 0.5rem; }
+    .card li { margin-bottom: 0.5rem; }
+    .education-card { border-left: 4px solid var(--primary); }
+    .skills-category { margin-bottom: 1rem; }
+    .skills-category strong { display: block; color: #1e3a8a; margin-bottom: 0.5rem; }
     footer { background: var(--dark); color: #cbd5f5; padding: 2rem 1rem; text-align: center; }
     footer a { color: #bfdbfe; }
     @media (max-width: 600px) {
@@ -55,10 +62,11 @@
       <h1>Nikhil S Y</h1>
       <h3>Cloud & DevOps Engineer</h3>
       <p>
-        Cloud and DevOps Engineer with 3+ years of experience in automating infrastructure, CI/CD pipelines, and cloud migrations across AWS and Azure.
+        Cloud and DevOps Engineer with 4+ years of experience in automating infrastructure, CI/CD pipelines and cloud migrations across AWS and Azure. Skilled in GoCD, Jenkins, Ansible, Terraform, Docker, and Kubernetes.
       </p>
       <nav>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
@@ -69,18 +77,22 @@
 
   <section id="about">
     <div class="container">
-      <h2>About Me</h2>
+      <h2>Professional Summary</h2>
       <div class="card">
         <p>
-          Cloud and DevOps Engineer with 3+ years of experience in automating infrastructure, building CI/CD pipelines,
-          and executing cloud migrations across AWS and Microsoft Azure. Currently working at Accenture on large-scale
-          enterprise projects in the media and banking domains.
+          Cloud and DevOps Engineer with 4 years of experience in automating infrastructure, CI/CD pipelines and cloud migrations across AWS and Azure. Skilled in GoCD, Jenkins, Ansible, Terraform, Docker, and Kubernetes. Experienced in deploying microservices, managing cloud infrastructure, and integrating tools like SonarQube, JFrog, ELK Stack and Grafana for quality, automation, and monitoring.
         </p>
-        <p>
-          Strong hands-on experience with GoCD, Jenkins, GitHub Actions, Terraform, Ansible, Docker, Kubernetes, and
-          Cloud Foundry. Actively involved in microservices deployments, environment promotions, release management,
-          monitoring, and incident troubleshooting.
-        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="card education-card">
+        <h3>Malnad College of Engineering</h3>
+        <p class="role-info">B.E - Information Science | 08/2018 – 07/2022</p>
+        <p><strong>CGPA:</strong> 8.5 | <strong>Location:</strong> Hassan, Karnataka</p>
       </div>
     </div>
   </section>
@@ -90,35 +102,37 @@
       <h2>Experience</h2>
 
       <div class="card">
-        <h3>Custom Software Engineering Analyst – Accenture</h3>
-        <p><em>Mar 2024 – Present | Comcast Media</em></p>
+        <h3>Custom Software Engineering Analyst</h3>
+        <p class="role-info">Accenture | Mar 2024 – Present</p>
         <ul>
-          <li>Designed and implemented end-to-end CI/CD pipelines using GoCD for Java-based microservices with GitHub integration.</li>
-          <li>Automated build and quality checks using Gradle and Maven, enforcing quality gates through SonarQube.</li>
-          <li>Managed artifact versioning and storage using JFrog Artifactory to ensure traceable and consistent deployments.</li>
-          <li>Deployed microservices to Cloud Foundry across Dev, UAT, and Production using environment-specific manifest.yml files.</li>
-          <li>Executed canary deployments with automated rollback strategies to minimize production risk.</li>
-          <li>Performed Kubernetes Proof of Concept by containerizing applications with Docker and validating pod scaling and service communication.</li>
-          <li>Used ELK Stack and Grafana dashboards for centralized logging, monitoring, and incident triage.</li>
-          <li>Handled regular server patching activities to ensure infrastructure security and compliance.</li>
-          <li>Actively contributing to CI/CD migration from GoCD to GitHub Actions.</li>
-          <li>Provided on-call and production support to ensure high availability and minimal downtime.</li>
+          <li>Implemented CI/CD pipelines using GoCD for Java-based microservices with GitHub integration for automated code pull and build triggers.</li>
+          <li>Automated the build process using Gradle, Maven and integrated SonarQube for static code analysis and quality gates enforcement.</li>
+          <li>Managed artifact storage and versioning using JFrog Artifactory, ensuring traceable and consistent deployments.</li>
+          <li>Deployed microservices to Cloud Foundry across Dev, UAT, and Production using environment-specific manifests.</li>
+          <li>Executed Canary deployments with automated rollback capabilities to ensure minimal production impact and risk mitigation.</li>
+          <li>Performed a Kubernetes Proof of Concept (POC) by containerizing existing microservices using Docker, deploying them to a test Kubernetes cluster, and validating pod scaling, service communication, and health monitoring.</li>
+          <li>Used centralized logging (ELK stack) and Grafana dashboards for incident triage, log analysis, and system monitoring.</li>
+          <li>Conducted server patching activities regularly to maintain infrastructure compliance, security, and performance.</li>
+          <li>Created GitHub Actions workflows as part of the migration from GoCD to GitHub Actions for streamlined CI/CD automation.</li>
+          <li>Leveraged GitHub Copilot to accelerate workflow development, improving code consistency and reducing development time across CI/CD pipelines.</li>
+          <li>Responsible for creating and enhancing Grafana alerts for real-time incident detection, configuring alert rules, notification channels, and escalation policies to improve system observability and incident response time.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h3>Custom Software Engineering Associate – Accenture</h3>
-        <p><em>Oct 2022 – Mar 2024 | US Bank</em></p>
+        <h3>Custom Software Engineering Associate</h3>
+        <p class="role-info">Accenture | Oct 2022 – Mar 2024</p>
         <ul>
-          <li>Worked closely with Technical Solution Architecture (TSA) teams to understand infrastructure and security requirements.</li>
-          <li>Collaborated with application teams to assess architecture, dependencies, and automation needs.</li>
-          <li>Led migration of applications and workloads from on-premise datacenter to Microsoft Azure with minimal downtime.</li>
-          <li>Performed environment assessments and designed Azure equivalents for VMs, storage, databases, and networking.</li>
-          <li>Provisioned Azure infrastructure using reusable Terraform modules across multiple subscriptions.</li>
-          <li>Implemented Azure security best practices including NSGs, managed identities, and Key Vault integration.</li>
-          <li>Configured Azure Site Recovery (ASR) for disaster recovery and business continuity.</li>
-          <li>Developed and executed Ansible playbooks for post-deployment configuration and application readiness.</li>
-          <li>Created detailed deployment guides, runbooks, and operational documentation.</li>
+          <li>Collaborated with the Technical Solution Architecture (TSA) team to understand infrastructure requirements, security considerations, and compliance guidelines for AWS migration.</li>
+          <li>Engaged directly with client application teams to assess application architecture, understand dependencies, and define required Terraform automation modules.</li>
+          <li>Supported migration of applications and workloads from on-premise datacenter to AWS, ensuring minimal downtime and full compatibility across multiple AWS regions.</li>
+          <li>Performed environment assessments, dependency mapping, and helped design AWS equivalents for on-prem services including EC2 instances, S3 storage, RDS databases, VPCs, and security groups.</li>
+          <li>Assisted with post-migration testing, performance validation, and implementation of AWS Backup strategies with automated snapshots and disaster recovery plans.</li>
+          <li>Built infrastructure using Terraform modules across multiple AWS accounts and regions, following Infrastructure-as-Code best practices.</li>
+          <li>Ensured adherence to AWS security and networking best practices, including VPC architecture, Security Groups, IAM roles, and AWS Secrets Manager integration.</li>
+          <li>Worked on AWS DMS (Database Migration Service) to replicate on-prem databases to AWS RDS, ensuring data consistency and zero-downtime migrations.</li>
+          <li>Configured AWS Lambda functions and CloudWatch events for automated infrastructure provisioning and cost optimization workflows.</li>
+          <li>Created migration runbooks, deployment guides, and process documentation to help application teams understand AWS infrastructure setup and CI/CD integration.</li>
         </ul>
       </div>
     </div>
@@ -127,10 +141,47 @@
   <section id="skills">
     <div class="container">
       <h2>Skills</h2>
-      <div class="card skills">
-        <span>AWS</span><span>Azure</span><span>Terraform</span><span>Ansible</span><span>Docker</span><span>Kubernetes</span>
-        <span>GoCD</span><span>Jenkins</span><span>GitHub Actions</span><span>Cloud Foundry</span><span>ELK Stack</span><span>Grafana</span>
-        <span>Bash</span><span>Python</span><span>Linux</span>
+      <div class="card">
+        <div class="skills-category">
+          <strong>CI/CD and Build Tools:</strong>
+          <span>Jenkins</span><span>GitHub Actions</span><span>Gradle</span><span>Maven</span>
+        </div>
+        <div class="skills-category">
+          <strong>SCM Tools:</strong>
+          <span>GitHub</span><span>GitLab</span>
+        </div>
+        <div class="skills-category">
+          <strong>AI-Assisted Development:</strong>
+          <span>GitHub Copilot</span><span>Claude</span>
+        </div>
+        <div class="skills-category">
+          <strong>Containerization & Deployment:</strong>
+          <span>Docker</span><span>CloudFoundry</span><span>Kubernetes</span>
+        </div>
+        <div class="skills-category">
+          <strong>Monitoring & Logging:</strong>
+          <span>ELK Stack</span><span>Grafana</span><span>SonarQube</span><span>JFrog Artifactory</span>
+        </div>
+        <div class="skills-category">
+          <strong>Cloud Platforms:</strong>
+          <span>AWS</span><span>Azure</span>
+        </div>
+        <div class="skills-category">
+          <strong>Infrastructure Management:</strong>
+          <span>Terraform</span><span>Ansible</span>
+        </div>
+        <div class="skills-category">
+          <strong>Scripting Languages:</strong>
+          <span>Bash</span><span>Python</span>
+        </div>
+        <div class="skills-category">
+          <strong>Database:</strong>
+          <span>RDS</span><span>DynamoDB</span><span>Redis</span>
+        </div>
+        <div class="skills-category">
+          <strong>Operating Systems:</strong>
+          <span>Ubuntu</span><span>RHEL</span><span>Windows</span>
+        </div>
       </div>
     </div>
   </section>
@@ -140,7 +191,7 @@
       <h2>Certifications</h2>
       <div class="grid">
         <div class="card">AWS Certified Cloud Practitioner</div>
-        <div class="card">Microsoft Certified Azure Fundamentals (AZ‑900)</div>
+        <div class="card">Microsoft Certified Azure Fundamentals (AZ-900)</div>
       </div>
     </div>
   </section>
